@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <script src="js/script.js" defer></script>
+    <title>Animio | Search Animes & Mangas</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><a href="./index.html">Animio</a></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="./index.html">Animes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./manga.html">Mangas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="search">
+        <div class="container">
+            <div id="alert"></div>
+            <form action="search.html" class="search-form">
+                <div class="search-radio">
+                    <input type="radio" id="anime" name="type" value="anime" checked />
+                    <label for="animes">Animes</label>
+                    <input type="radio" id="mangas" name="type" value="manga" />
+                    <label for="manga">Mangas</label>
+                </div>
+                <div class="search-flex">
+                    <input type="text" name="search-term" id="search-term" placeholder="Enter search term" />
+                    <button class="btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="search-results-wrapper" class="container">
+        <heading id="search-results-heading"></heading>
+        <div id="search-results" class="grid">
+            
+        </div>
+        <div id="pagination">
+          <div class="pagination">
+            <button class="btn btn-primary" id="prev">Prev</button>
+            <button class="btn btn-primary" id="next">Next</button>
+            <div class="page-counter">Page 1 of 5</div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="container">
+          <div class="logo"><span>Animio</span></div>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/amro-khalfa-3b4609266/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/MioKh" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+  
+      <div class="spinner"></div>
+</body>
+
+</html>
